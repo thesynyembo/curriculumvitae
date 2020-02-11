@@ -4,24 +4,39 @@
 .info{
     text-align:justify;
     height: 200px;
-    width: 47%;
-    display: inline-block;
+    display: table;
+    margin-left: 15px;
+    margin-left: 20px;
+    float: left;
+    
+}
+
+.section{
+    width: 100%;
+}
+.col{
+    width: 30%;
+}
+.kal{
+    width: 60%;
 }
 .photo{
     width: 130px;
     height: 130px;
     border-radius: 120px;
-    float: left;
-    margin-left: 30%;
-    margin-top: 20px;
+    margin-left: 20px;
+    margin-top: 30px;
     
+}
+.autres{
+    margin-left: 80px;
 }
 .tel{
     width: 60px;
     border:3px double rgb(235, 192, 127);
 }
 .tele{
-    width: 25px;
+    width: 15px;
     height: 25px;
     text-align: justify;
 }
@@ -30,6 +45,7 @@
     border: 0px solid ;
     background: rgb(181, 228, 236);
     border-radius:10px;
+    display: table;
 } 
 body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -52,19 +68,42 @@ h2{
         margin-left: 0px;
     }
 }
-@media screen and (max-width:547px){
-    .section{
-        background-color: rgb(216, 228, 223);
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    
-    }
 
-}
-@media screen and (max-width:600px){
+@media screen and (max-width:602px){
     #infophoto{
         background-color: silver;
     }
     h2{
         color:rgb(213, 195, 238)
     }
+
+    .photo{
+        margin-left: 0px;
+        margin-top: 30px;
+        
+    }
+    .info{
+        width: 35%;
+        margin-left: 10%;
+
+    }
+    #section{
+        width: 100%;
+
+    }
 }
+
+@media screen and (max-width:602px){
+    .info{
+        width: 100%;
+        margin-left: 0px;
+        float: none;
+
+    }
+
+    .kal{
+        margin-left: 30%;
+    }
+   
+}
+
